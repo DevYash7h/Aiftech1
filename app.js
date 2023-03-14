@@ -45,7 +45,7 @@ app.use(`${api}/NewCandidates` , newcandidateRouter);
 
 //Database  
 mongoose.set('strictQuery', true);
-mongoose.connect(process.env.CONNECTION_STRING ,
+mongoose.connect('mongodb+srv://AifetchSona:SonaAifetch1@cluster0.xj5ztzg.mongodb.net/?retryWrites=true&w=majority' ,
     {
         dbName: 'AifetchDatab'
     } 
